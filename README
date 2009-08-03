@@ -1,0 +1,48 @@
+Background:
+
+APIs like Yelp that 
+
+
+Usage:
+
+Yelp:
+
+(see http://www.yelp.com/developers/documentation/search_api)
+
+<form id="restaurant-locator" action="http://api.yelp.com/business_review_search?callback=?"> 
+    <input type="text" id="location" name="location" />
+    <input type="hidden" name="ywsid" value="Ky-PybyihkKCWAxEBeorYg" />
+    <input type="hidden" id="category" name="category" value="restaurants" />
+    <input type="hidden" id="drop" name="drop" value="lunch-location-drop" />
+    <input type="submit" />
+</form>
+
+
+Flickr:
+
+(from http://docs.jquery.com/Ajax/jQuery.getJSON#urldatacallback)
+
+<form id="picture-search" action="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?"> 
+    <input type="text" name="tags" value="cats" />
+    <input type="hidden" name="tagmode" value="any" />
+    <input type="hidden" name="format" value="json" />
+    <input type="submit" />
+</form>
+
+
+Twitter:
+
+Twitter doesn't use paramaters for all selection fields so directly calling the API for JSONP with $.getJSON is the preferred option.
+
+http://jquery-howto.blogspot.com/2009/04/jquery-twitter-api-plugin.html
+
+
+
+Options:
+
+
+http://svn.zope.org/jquery.jsonform/trunk/src/jquery/jsonform/
+
+http://malsup.com/jquery/form/
+
+http://code.google.com/p/happyhour/source/browse/trunk/jsonptester.js?r=17
